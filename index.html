@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-form">
+            <img src="assets/images/undraw_steps_re_odoy.svg" alt="">
+        </div>
+
+        <div class="form">
+            <form action="#" id="form-data">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+
+                    <div class="login-button">
+                        <button class="login"><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="firstname">Primeiro Nome</label>
+                            <img class="name-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="text" id="firstname" placeholder="Digite o seu primeiro nome">
+                    </div>
+
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="lastname">Sobrenome</label>
+                            <img class="lastname-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="text" id="lastname" placeholder="Digite o seu sobrenome">
+                    </div>
+
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="email">E-mail</label>
+                            <img class="email-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="email" id="email" placeholder="Digite o seu e-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="tel">Celular</label>
+                            <img class="tel-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="tel" id="tel" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="password">Senha</label>
+                            <img class="pass-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="password" id="password" placeholder="Digite a sua senha" autocomplete="off">
+                        <b class="pass-msg">A senha deve ter no minímo 8 caracteres</b>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="label-content">
+                            <label for="confirmpassword">Confirme sua senha</label>
+                            <img class="confirmpass-img" src="assets/images/alerta.png" alt="">
+                        </div>
+                        <input type="password" id="confirmpass" placeholder="Confirme a sua senha" autocomplete="off">
+                        <b class="confirmpass-msg">As duas senhas devem ser iguais!</b>
+                    </div>
+                </div>
+
+                <div class="gender-group">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-inputs">
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="others">
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="none">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button class="btn" type="submit"><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-login hidden">
+        <div class="login-image">
+            <img src="assets/images/undraw_login_re_4vu2.svg" alt="">
+        </div>
+
+        <div class="form-login">
+            <form action="#">
+                <div class="login-header">
+                    <div class="title-login">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+
+                <div class="login-inputs">
+                    <div class="login-box">
+                        <label for="user">Usuário</label>
+                        <input type="email" name="email" id="login-email" placeholder="Digite o seu e-mail" required>
+                    </div>
+
+                    <div class="login-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="login-password" placeholder="Digite a sua senha" required autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="remember-group">
+                    <div class="remember-login">
+                        <input type="radio" name="remember" id="remember">
+                        <p>Lembre-me</p>
+                    </div>
+
+                    <div class="remember-password">
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                </div>
+
+                <div class="log-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+
+                <div class="cadastro-group">
+                    <p>Não tem conta? <a class="register" href="#">Cadastre-se</a></p>
+                </div>
+
+                <div class="social-logins">
+                    <div class="social-group">
+                        <h3>Logar com</h3>
+
+                        <div class="social-images">
+                            <img src="assets/images/google.png" alt="Google">
+                            <img src="assets/images/logotipo-da-apple.png" alt="Apple">
+                            <img src="assets/images/facebook.png" alt="Facebook">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
