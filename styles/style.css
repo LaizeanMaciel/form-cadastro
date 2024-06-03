@@ -141,7 +141,15 @@ body {
     margin-top: 0.8rem;
 }
 
+.gender-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.gender-img {
+    width: 15px;
+}
 
 .gender-inputs {
     display: flex;
@@ -394,7 +402,7 @@ form {
     font-size: 10px;
     color: red;
     display: none;
-    position: fixed;
+    position: absolute;
     top: 470px;
 }
 
@@ -420,7 +428,7 @@ form {
     font-size: 10px;
     color: red;
     display: none;
-    position: fixed;
+    position: absolute;
     top: 470px;
 }
 
@@ -438,6 +446,26 @@ form {
 
 .container form.error-msg .confirmpass-msg {
     display: block;
+}
+
+/*------------------------Gênero----------------------------*/
+
+.gender-img {
+    display: none;
+}
+
+.container form.error-gender .gender-img {
+    display: block;
+}
+
+.input-pass-1 {
+   display: flex;
+   flex-direction: column;
+}
+
+.input-pass-2 {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -501,6 +529,16 @@ form {
         flex-direction: column;
         gap: 8px;
         margin-top: 0.8rem;
+    }
+
+    .pass-msg {
+        position: static;
+        margin-top: 5px;
+    }
+
+    .confirmpass-msg {
+        margin-top: 5px;
+        position: static;
     }
 
 }

@@ -80,7 +80,7 @@ form.addEventListener("submit", (event) => {
     }
 
     
-    form.submit();
+    //form.submit();
 })
 
 
@@ -147,9 +147,40 @@ inputTel.addEventListener("input", () => {
     inputTel.value = numeroFormatado
 })
 
+function validateForm () {
+    const radios = document.getElementsByName('gender');
+    let formIsValid = false;
+
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            formIsValid = true;
+            break;
+        }
+    }
+
+    if (!formIsValid) {
+        form.classList.add('error-gender')
+    } else {
+        form.classList.remove('error-gender')
+    }
+}
+
+//event.preventDefault(); // Impede o envio do formulário
 
 
+/*function validateForm(event) {
+    const radios = document.getElementsByName('gender');
+    let formIsValid = false;
 
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            formIsValid = true;
+            break;
+        }
+    }
 
-
-
+    if (!formIsValid) {
+        alert('Por favor, selecione uma opção de gênero.');
+        event.preventDefault(); // Impede o envio do formulário
+    }
+}*/
