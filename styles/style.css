@@ -563,9 +563,10 @@ form {
 
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 375px) {
     .container-login {
-        width: 80%;
+        width: 90%;
+        
     }
 
 }
